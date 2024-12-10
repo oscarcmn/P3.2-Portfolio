@@ -1,0 +1,6 @@
+@use "globals" as *;
+h1 {
+  text-align: center;
+  color: $azul;
+  font-size: $titulo-text-size;
+}

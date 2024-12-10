@@ -1,0 +1,10 @@
+@use "globals" as *;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+main {
+  padding-left: $container;
+  padding-right: $container;
+}

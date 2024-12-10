@@ -1,0 +1,12 @@
+@use "globals" as *;
+
+.conocimientos {
+  .tabla {
+    background-color: $azul;
+    border-collapse: collapse;
+    border-color: $blanco;
+    width: 80%;
+    color: $blanco;
+    border-radius: 10px;
+  }
+}

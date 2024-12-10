@@ -1,0 +1,15 @@
+@use "globals" as *;
+
+.sobremi {
+  .yo {
+    display: flex;
+    .fotomia {
+      width: 100px;
+      height: 100px;
+    }
+    .descripcion {
+      padding-left: 30px;
+      color: $azul;
+    }
+  }
+}
