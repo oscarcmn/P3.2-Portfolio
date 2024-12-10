@@ -33,7 +33,13 @@ header {
       font-size: 1rem;
       cursor: pointer;
       transition: all 0.3s ease;
-
+      a {
+        text-decoration: none;
+        color: $azul;
+        &:hover {
+          color: $blanco;
+        }
+      }
       &:hover {
         background-color: $azul;
         color: $blanco;
