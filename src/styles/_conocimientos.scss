@@ -10,5 +10,29 @@
     width: 60%;
     color: $blanco;
     border-radius: 10px;
+    &:hover {
+      border-collapse: collapse;
+      border-radius: 10px;
+    }
+    tr {
+      &:hover {
+        background-color: $azulhover;
+        border-collapse: collapse;
+        border-radius: 10px;
+      }
+    }
+    .azulclaro {
+      background-color: $azulclaro;
+    }
+    td {
+      padding: 15px;
+      &:hover {
+        border-collapse: collapse;
+        border-radius: 10px;
+      }
+    }
+    .grande {
+      font-size: 25px;
+    }
   }
 }
