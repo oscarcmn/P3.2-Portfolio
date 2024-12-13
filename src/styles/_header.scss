@@ -6,9 +6,10 @@ header {
   justify-content: space-between;
   padding: 10px 20px;
   background-color: $blanco;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgb(50, 59, 113);
   padding-left: $container;
   padding-right: $container;
+
   .logo {
     display: flex;
     align-items: center;
@@ -23,27 +24,5 @@ header {
   .menu {
     display: flex;
     gap: 15px;
-
-    button {
-      background-color: transparent;
-      border: 2px solid $azul;
-      color: $azul;
-      border-radius: $border-radius;
-      padding: 5px 15px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      a {
-        text-decoration: none;
-        color: $azul;
-        &:hover {
-          color: $blanco;
-        }
-      }
-      &:hover {
-        background-color: $azul;
-        color: $blanco;
-      }
-    }
   }
 }

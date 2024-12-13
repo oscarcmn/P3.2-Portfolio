@@ -1,0 +1,32 @@
+@use "globals" as *;
+
+.card {
+  border: 1px solid $azul;
+  border-radius: 16px;
+  box-shadow: 1px;
+  height: 400px;
+  width: 300px;
+  overflow: hidden;
+  background-color: #fff;
+
+  .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-body {
+    .card-title {
+      font-weight: bold;
+      font-size: 30px;
+      margin: 0;
+    }
+
+    .card-text {
+      color: $azul;
+    }
+
+    .boton {
+      margin-left: 30px;
+    }
+  }
+}

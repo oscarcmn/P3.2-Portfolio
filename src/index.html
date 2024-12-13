@@ -15,11 +15,11 @@
     </div>
     <div class="menu">
       <!--Prueba a poner el href en el mismo boton-->
-      <button><a href="#sobremi">Sobre mi</a></button>
-      <button><a href="#conocimientos">Conocimientos</a></button>
-      <button><a href="#estudios">Estudios</a></button>
-      <button><a href="#proyectos">Proyectos</a></button>
-      <button><a href="#dnd">¿Donde encontrarme?</a></button>
+      <a href="#sobremi">Sobre mi</a>
+      <a href="#conocimientos">Conocimientos</a>
+      <a href="#estudios">Estudios</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#dnd">¿Donde encontrarme?</a>
     </div>
   </header>
   <main>
@@ -38,7 +38,7 @@
       </div>
     </section>
     <section class="conocimientos">
-      <h1>Conocimientos</h1>
+      <h1 id="conocimientos">Conocimientos</h1>
       <table border="1" class="tabla">
         <tbody>
           <tr>
@@ -61,7 +61,7 @@
       </table>
     </section>
     <section class="estudios">
-      <h1>Estudios</h1>
+      <h1 id="estudios">Estudios y Titulaciones</h1>
       <div class="titulo">
         <p><i class="fa fa-circle" aria-hidden="true"></i></p>
         <p class="titulotxt">Desarrollo de Aplicaciones Web (DAW), IES Azarquiel, 2023-2025</p>
@@ -74,12 +74,49 @@
         <p><i class="fa fa-circle" aria-hidden="true"></i></p>
         <p class="titulotxt">Educacion Secundaria Obligatoria (ESO), IES La Sisla, 2017-2021</p>
       </div>
+      <div class="titulo">
+        <p><i class="fa fa-circle" aria-hidden="true"></i></p>
+        <p class="titulotxt">Certificado de Cambridge de nivel B2 en Inglés</p>
+      </div>
     </section>
     <section class="proyectos">
-      <h1>Proyectos</h1>
+      <h1 id="proyectos">Proyectos</h1>
+      <div class="grupocards">
+        <div class="card">
+          <img src="img/readingtime.png" class="card-img-top" alt="Card Image">
+          <div class="card-body">
+            <h5 class="card-title">Reading Time</h5>
+            <p class="card-text">Pagina web sobre una tienda ficticia de libros, diseñada en figma y programada con
+              HTML5 y SCSS</p>
+            <a href="https://github.com/oscarcmn/P3.1-ReadingTime" class="boton">Miralo en GitHub</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/OpenLibrary.png" class="card-img-top" alt="Card Image">
+          <div class="card-body">
+            <h5 class="card-title">OpenLibrary</h5>
+            <p class="card-text">Pagina web donde accediendo a la RestAPI de OpenLibrary podemos buscar libros y
+              guardarlos en una API privada</p>
+            <a href="https://github.com/oscarcmn/P6.1-OpenLibrary" class="boton">Miralo en GitHub</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/OpenLibrary.png" class="card-img-top" alt="Card Image">
+          <div class="card-body">
+            <h5 class="card-title">Biblioteca</h5>
+            <p class="card-text">Pagina web donde usando Java accedes a una base de datos y se manejan los datos y se
+              muestran</p>
+            <a href="https://github.com/oscarcmn/P6.1-OpenLibrary" class="boton">Miralo en GitHub</a>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="dnd">
       <h1 id="dnd">¿Dónde encontrarme?</h1>
+      <p>Podras encontrarme en Github, LinkedIn e Instagram haciendo click en los iconos</p>
+      <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
     </section>
 
 

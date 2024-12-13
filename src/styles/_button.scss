@@ -1,0 +1,17 @@
+@use "globals" as *;
+
+a {
+  background-color: transparent;
+  border: 2px solid $azul;
+  color: $azul;
+  border-radius: $border-radius;
+  padding: 5px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  &:hover {
+    background-color: $azul;
+    color: $blanco;
+  }
+}
