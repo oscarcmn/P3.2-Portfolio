@@ -1,19 +1,13 @@
-@font-face {
-  font-family: Cambria;
-  src: url(../fonts/Cambria-Font-For-Windows.ttf);
-}
-
 $border-radius: 20px;
-$font-family: "Cambria";
-
-$rojo: rgb(222, 73, 41);
+$font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 $negro: rgb(0, 0, 0);
 $blanco: rgb(255, 255, 255);
 $azul: rgb(50, 59, 113);
 $azulclaro: rgb(65, 82, 180);
 $azulhover: rgb(11, 21, 76);
-$verde: rgb(190, 222, 41);
-
 $container: 7%;
 $margin-top: 20px;
-$titulo-text-size: 40px;
+$titulo-text-size: 50px;
+$txtcard: 16px;
+$titulocard: 37px;
+$txtnormal: 20px;
