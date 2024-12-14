@@ -1,8 +1,15 @@
 import { defineConfig } from "vite";
+import { resolve } from "path";
 
 export default defineConfig({
-  root: "./src", // Cambia la raíz del proyecto a "src"
   build: {
-    outDir: "../docs", // Los archivos construidos irán a la carpeta "docs"
+    root: "./src", // Cambia la raíz del proyecto a "src"
+    outDir: "../docs", // Cambia el directorio de salida
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "src/index.html"),
+      },
+    },
   },
+  base: "/P3.2-Portfolio/",
 });
