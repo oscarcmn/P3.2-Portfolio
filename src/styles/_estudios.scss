@@ -13,5 +13,11 @@
       color: $azul;
       font-size: 20px;
     }
+    @include respond-to-medium {
+      padding-left: 45px;
+    }
+    @include respond-to-small {
+      padding-left: 25px;
+    }
   }
 }

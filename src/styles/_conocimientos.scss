@@ -10,6 +10,14 @@
     width: 60%;
     color: $blanco;
     border-radius: 10px;
+    @include respond-to-medium {
+      left: 4%;
+      width: 96%;
+    }
+    @include respond-to-small {
+      left: 2%;
+      width: 98%;
+    }
     &:hover {
       border-collapse: collapse;
       border-radius: 10px;

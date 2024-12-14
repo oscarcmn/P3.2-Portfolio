@@ -2,6 +2,7 @@
 
 header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
@@ -19,13 +20,20 @@ header {
       width: 170px;
       height: 50px;
     }
+    @include respond-to-medium {
+      justify-content: center;
+      padding-bottom: 20px;
+    }
+  }
+  @include respond-to-medium {
+    justify-content: center;
   }
 
   .menu {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     @include respond-to-medium {
-      padding-left: 10px;
       gap: 20px;
       justify-content: center;
     }
@@ -34,38 +42,5 @@ header {
       padding-right: 15px;
       gap: 20px;
     }
-  }
-}
-.menu-toggle {
-  display: none; // Oculto en pantallas grandes
-  cursor: pointer;
-
-  .hamburger {
-    width: 25px;
-    height: 3px;
-    background-color: $blanco;
-    margin: 5px 0;
-    transition: all 0.3s ease;
-
-    &::before,
-    &::after {
-      content: "";
-      display: block;
-      width: 25px;
-      height: 3px;
-      background-color: $blanco;
-      transition: all 0.3s ease;
-    }
-
-    &::before {
-      transform: translateY(-8px);
-    }
-
-    &::after {
-      transform: translateY(8px);
-    }
-  }
-  @include respond-to-medium {
-    display: block;
   }
 }
