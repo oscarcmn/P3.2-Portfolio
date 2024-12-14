@@ -5,79 +5,129 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
-  <script type="module" crossorigin src="/assets/index-MWqJQlWT.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-Dpx5IFzq.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="module" crossorigin src="/assets/index-DZjm5Apd.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BU3mEx5s.css">
 </head>
 
 <body>
-  <header class="navbar">
+  <header>
     <div class="logo">
-      <img src="logo.png" alt="OSCAR Logo">
-      <span>OSCAR</span>
+      <img src="/assets/logo_portfolio-CWrQo9VF.png" alt="OSCAR Logo">
+    </div>
+    <div class="menu-toggle" id="menuToggle">
+      <div class="hamburger"></div>
     </div>
     <div class="menu">
-      <button>Sobre mi</button>
-      <button>Conocimientos</button>
-      <button>Estudios</button>
-      <button>Proyectos</button>
-      <button>Experiencia</button>
+      <a href="#sobremi">Sobre mi</a>
+      <a href="#conocimientos">Conocimientos</a>
+      <a href="#estudios">Estudios</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#dnd">¿Donde encontrarme?</a>
     </div>
   </header>
-  <div class="text-wrapper-2">Sobre mi</div>
-  </div>
-  <p class="p">
-    Soy Óscar Carmena Martín, soy un desarrollador web español con conocimientos sobre Frontend, Backend y Bases
-    de Datos. Conozco diversos lenguajes de programacion a un nivel alto. Soy trabajador, tengo buenas capacidades
-    de comunicacion y cooperacion, tengo capacidades de liderazgo y suficiente asertividad para encajar
-    perfectamente en un proyecto que involucre trabajar en equipo. Me defino a mi mismo como un apasionado de la
-    informatica, pues siempre estoy aprendiendo más para mantenerme al dia con las nuevas tecnologías que salen al
-    mercado.
-  </p>
-  <div class="text-wrapper-3">Conocimientos</div>
-  <div class="table-wrapper">
+  <main>
+    <section class="sobremi" id="sobremi">
+      <h1>Sobre mi</h1>
+      <div class="yo">
+        <img class="fotomia" src="/assets/ftperfil-apl9AIa2.png" alt="yo">
+        <p class="descripcion">
+          Soy Óscar Carmena Martín, soy un desarrollador web español con conocimientos sobre Frontend, Backend y Bases
+          de Datos. Conozco diversos lenguajes de programacion a un nivel alto. Soy trabajador, tengo buenas capacidades
+          de comunicacion y cooperacion, tengo capacidades de liderazgo y suficiente asertividad para encajar
+          perfectamente en un proyecto que involucre trabajar en equipo. Me defino a mi mismo como un apasionado de la
+          informatica, pues siempre estoy aprendiendo más para mantenerme al dia con las nuevas tecnologías que salen al
+          mercado.
+        </p>
+      </div>
+    </section>
+    <section class="conocimientos">
+      <h1 id="conocimientos">Conocimientos</h1>
+      <table border="1" class="tabla">
+        <tbody>
+          <tr>
+            <td class="grande">FrontEnd</td>
+            <td>Tengo un nivel alto de conocimientos en HTML5, CSS3 y JavaScript. Conozco y he utilizado frameworks como
+              Vue, Vite y React. Estoy acostumbrado a usar Node. He utilizado pre-procesadores de CSS como SASS y tengo
+              un nivel avanzado en el
+              uso de BootStrap. Tambien tengo conocimientos sobre WordPress.</td>
+          </tr>
+          <tr class="azulclaro">
+            <td class="grande">BackEnd</td>
+            <td>Tengo un alto conocimiento sobre Java y un conocimiento medio de Spring y SpringBoot</td>
+          </tr>
+          <tr>
+            <td class="grande">Bases de Datos</td>
+            <td>Tengo un nivel medio en SQL y PLSQL, soy capaz de crear y administrar bases de datos, estoy
+              familiarizado con los modelos relacional y Entidad-Relacion a la hora de crear bases de datos</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="estudios">
+      <h1 id="estudios">Estudios y Titulaciones</h1>
+      <div class="titulo" data-aos="fade-left">
+        <p><i class="fa fa-circle" aria-hidden="true"></i></p>
+        <p class="titulotxt">Desarrollo de Aplicaciones Web (DAW), IES Azarquiel, 2023-2025</p>
+      </div>
+      <div class="titulo" data-aos="fade-left">
+        <p><i class="fa fa-circle" aria-hidden="true"></i></p>
+        <p class="titulotxt">Bachillerato, IES La Sisla, 2021-2023</p>
+      </div>
+      <div class="titulo" data-aos="fade-left">
+        <p><i class="fa fa-circle" aria-hidden="true"></i></p>
+        <p class="titulotxt">Educacion Secundaria Obligatoria (ESO), IES La Sisla, 2017-2021</p>
+      </div>
+      <div class="titulo" data-aos="fade-left">
+        <p><i class="fa fa-circle" aria-hidden="true"></i></p>
+        <p class="titulotxt">Certificado de Cambridge de nivel B2 en Inglés</p>
+      </div>
+    </section>
+    <section class="proyectos">
+      <h1 id="proyectos">Proyectos</h1>
+      <div class="grupocards">
+        <div class="card" data-aos="fade-right">
+          <img src="/assets/readingtime-B1OU1aG3.png" class="card-img-top" alt="Card Image">
+          <div class="card-body">
+            <h5 class="card-title">Reading Time</h5>
+            <p class="card-text">Pagina web sobre una tienda ficticia de libros, diseñada en figma y programada con
+              HTML5 y SCSS</p>
+            <a href="https://github.com/oscarcmn/P3.1-ReadingTime" class="boton">Miralo en GitHub</a>
+          </div>
+        </div>
+        <div class="card" data-aos="fade-up">
+          <img src="/assets/OpenLibrary-DNOShtaI.png" class="card-img-top" alt="Card Image">
+          <div class="card-body">
+            <h5 class="card-title">OpenLibrary</h5>
+            <p class="card-text">Pagina donde accediendo a la RestAPI de OpenLibrary buscaremos libros y
+              guardarlos en una API privada</p>
+            <a href="https://github.com/oscarcmn/P6.1-OpenLibrary" class="boton">Miralo en GitHub</a>
+          </div>
+        </div>
+        <div class="card" data-aos="fade-left">
+          <img src="/assets/biblio-CACjQmPH.png" class="card-img-top" alt="Card Image">
+          <div class="card-body">
+            <h5 class="card-title">Biblioteca</h5>
+            <p class="card-text">Pagina web donde usando Java accedes a una base de datos y se manejan los datos y se
+              muestran</p>
+            <a href="https://github.com/oscarcmn/P6.1-OpenLibrary" class="boton">Miralo en GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="dnd">
+      <h1 id="dnd">¿Dónde encontrarme?</h1>
+      <p>Podras encontrarme en Github, LinkedIn e Instagram haciendo click en los iconos</p>
+      <div class="grupoiconos">
+        <a href="https://github.com/oscarcmn/"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="https://es.linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/oscarcmnn/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </div>
+    </section>
 
-  </div>
-  <div class="content-wrapper">
-    <div class="content-2">
-      <div class="text-2"></div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="content-wrapper">
-      <div class="content">
-        <div class="text-3"></div>
-      </div>
-    </div>
-    <div class="content-wrapper">
-      <div class="content">
-        <div class="text-3"></div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="content-wrapper">
-      <div class="content">
-        <div class="text-3"></div>
-      </div>
-    </div>
-    <div class="content-wrapper">
-      <div class="content">
-        <div class="text-3"></div>
-      </div>
-    </div>
-  </div>
-  <div class="estudios">
-    <div class="text-wrapper-4">Estudios</div>
-    <div class="ellipse"></div>
-    <p class="text-wrapper-5">Desarrollo de Aplicaciones Web (DAW), IES Azarquiel, 2023-2025</p>
-    <div class="ellipse-2"></div>
-    <p class="text-wrapper-6">Bachillerato, IES La Sisla, 2021-2023</p>
-    <div class="ellipse-3"></div>
-    <p class="text-wrapper-7">Educacion Secundaria Obligatoria (ESO), IES La Sisla, 2017-2021</p>
-    <div class="text-wrapper-8">Proyectos</div>
-  </div>
-  </div>
-  </div>
+
+  </main>
+
 </body>
 
 </html>
